@@ -11,7 +11,7 @@
 	</appender>
 
 	<appender name="FileAppender" class="org.apache.log4j.RollingFileAppender">
-		<param name="File" value="logs/ecf-af-web.log" />
+		<param name="File" value="logs/spring-aop.log" />
 		<param name="Append" value="true" />
 		<param name="MaxFileSize" value="10MB" />
 		<param name="MaxBackupIndex" value="5" />
