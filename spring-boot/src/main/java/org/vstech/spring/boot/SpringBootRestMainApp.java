@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * http://websystique.com/spring-boot/spring-boot-rest-api-example/
  * https://stackoverflow.com/questions/28466207/could-not-find-acceptable-representation-using-spring-boot-starter-web
  * https://stackoverflow.com/questions/26549379/when-use-responseentityt-and-restcontroller-for-spring-restful-applications
- * 
+ * https://github.com/in28minutes/spring-boot-examples 
  *
  */
 
