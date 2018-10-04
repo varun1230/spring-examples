@@ -1,9 +1,14 @@
 package org.vstech.spring.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import org.vstech.spring.model.Employee;
@@ -21,7 +26,7 @@ public class UsageOfController {
 	 * Example of sending string reponse
 	 */
 	@RequestMapping(value="printMessage")
-	public @ResponseBody String printMessage() {
+	public @ResponseBody String printMessage( HttpServletRequest request, HttpServletResponse response) {
 		System.out.println("Example of sample print message");
 		return "Response from the plain controller";
 	}
@@ -31,8 +36,8 @@ public class UsageOfController {
 	 */
 
 	@RequestMapping(value="forwardPrintMessage") 
-	public String forwardPrintMessage() {
-		System.out.println("Inside the forwardPrintMessage");
+	public String forwardPrintMessage(@RequestParam("id") String id) {
+		System.out.println("Inside the forwardPrintMessage"+id);
 		return "printMessage";
 	}
 	
@@ -50,7 +55,7 @@ public class UsageOfController {
 	 */
 
 	@RequestMapping(value="getEmployeeInJSON/{name}", method=RequestMethod.GET, produces="application/json")
-	public @ResponseBody Employee getEmployeeInJSON(@PathVariable String name) {
+	public @ResponseBody Employee getEmployeeInJSON(HttpServletRequest request, HttpServletResponse response, @PathVariable String name) {
 		Employee e = new Employee();
 		e.setName(name);
 		e.setEmail(name+"@vstTech.com");
@@ -63,7 +68,7 @@ public class UsageOfController {
 	 */
 
 	@RequestMapping(value="getEmployeeInXML/{name}.xml", method=RequestMethod.GET, produces="application/xml")
-	public @ResponseBody Employee getEmployeeInXML(@PathVariable String name) {
+	public @ResponseBody Employee getEmployeeInXML(HttpServletRequest request, HttpServletResponse response,@PathVariable String name) {
 		Employee e = new Employee();
 		e.setName(name);
 		e.setEmail(name+"@vstTech.com");
