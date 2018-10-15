@@ -17,7 +17,10 @@ For XML include the jaxb-api-osgi jar to the project classpath
 -->
 <mvc:annotation-driven />
 
-<aop:aspectj-autoproxy />
+<context:component-scan base-package="org.vstech.spring.aop" />	
+
+<aop:aspectj-autoproxy proxy-target-class="true" />
+
 	
 <context:component-scan base-package="org.vstech.spring.controller" />	
 
