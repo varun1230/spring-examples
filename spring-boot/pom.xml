@@ -29,18 +29,27 @@
   		<artifactId>spring-boot-starter-aop</artifactId>
   		<version>${spring.boot.version}</version>
   	</dependency>
+<<<<<<< HEAD
+=======
+  	
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-actuator</artifactId>
+  		<version>${spring.boot.version}</version>
+  	</dependency>
+>>>>>>> branch 'master' of https://github.com/varun1230/spring-examples.git
     
-	<dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-context</artifactId>
-		<version>${spring.version}</version>
-	</dependency>
+<!-- 	<dependency> -->
+<!-- 		<groupId>org.springframework</groupId> -->
+<!-- 		<artifactId>spring-context</artifactId> -->
+<!-- 		<version>${spring.version}</version> -->
+<!-- 	</dependency> -->
 	
-	<dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-webmvc</artifactId>
-		<version>${spring.version}</version>
-	</dependency>
+<!-- 	<dependency> -->
+<!-- 		<groupId>org.springframework</groupId> -->
+<!-- 		<artifactId>spring-webmvc</artifactId> -->
+<!-- 		<version>${spring.version}</version> -->
+<!-- 	</dependency> -->
 	
 	
 	<!-- For XML support -->
@@ -50,11 +59,11 @@
 <!--     <version>2.2.7</version> -->
 <!-- 	</dependency> -->
 
-	<dependency>
-	    <groupId>com.fasterxml.jackson.dataformat</groupId>
-	    <artifactId>jackson-dataformat-xml</artifactId>
-	    <version>2.9.7</version>
-	</dependency>
+<!-- 	<dependency> -->
+<!-- 	    <groupId>com.fasterxml.jackson.dataformat</groupId> -->
+<!-- 	    <artifactId>jackson-dataformat-xml</artifactId> -->
+<!-- 	    <version>2.9.7</version> -->
+<!-- 	</dependency> -->
 
 	<!-- For JSON support NOT REQUIRED AS spring-boot starter kit already has it-->
 
@@ -65,21 +74,23 @@
 <!-- 	</dependency> -->
 
 	<!-- logging dependencies -->
-  	<dependency>
-		<artifactId>slf4j-log4j12</artifactId>
-		<groupId>org.slf4j</groupId>
-		<version>${slf4j.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>org.slf4j</groupId>
-		<artifactId>slf4j-api</artifactId>
-		<version>${slf4j.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>org.slf4j</groupId>
-		<artifactId>jcl-over-slf4j</artifactId>
-		<version>${slf4j.version}</version>
-	</dependency>
+<!--   	<dependency> -->
+<!-- 		<artifactId>slf4j-log4j12</artifactId> -->
+<!-- 		<groupId>org.slf4j</groupId> -->
+<!-- 		<version>${slf4j.version}</version> -->
+<!-- 	</dependency> -->
+
+<!-- 	<dependency> -->
+<!-- 		<groupId>org.slf4j</groupId> -->
+<!-- 		<artifactId>slf4j-api</artifactId> -->
+<!-- 		<version>${slf4j.version}</version> -->
+<!-- 	</dependency> -->
+	
+<!-- 	<dependency> -->
+<!-- 		<groupId>org.slf4j</groupId> -->
+<!-- 		<artifactId>jcl-over-slf4j</artifactId> -->
+<!-- 		<version>${slf4j.version}</version> -->
+<!-- 	</dependency> -->
 	
 	<dependency>
     <groupId>javax.servlet</groupId>
